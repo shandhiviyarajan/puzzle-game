@@ -32,18 +32,32 @@ div#level_1_wrapper {
 .block-drag {
   cursor: url(https://shopify.github.io/draggable/assets/img/cursor-drag.png), auto;
   position: relative;
-  width: 90px;
-  height: 90px;
-  background: #f1f1f1;
+  width: 84px;
+  height: 80px;
+  border-radius: 6px;
   margin: 5px 5px;
   font-weight: bold;
   font-size: 48px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  display: flex; }
+  display: flex;
+  -webkit-box-shadow: 0px 5px 1px #d46340;
+  -moz-box-shadow: 0px 5px 1px #d46340;
+  box-shadow: 0px 5px 1px #d46340;
+  background: #ff764e;
+  border: 3px solid transparent;
+  color: #fff;
+  outline: 0;
+  -webkit-transition: top, background 0.1s ease-in;
+  -moz-transition: top, background 0.1s ease-in;
+  -ms-transition: top, background 0.1s ease-in;
+  -o-transition: top, background 0.1s ease-in;
+  transition: top, background 0.1s ease-in; }
   .block-drag:hover {
-    background: #d9d9d9; }
+    background: #ff8a68; }
+  .block-drag:active {
+    background: #ff3b02; }
 
 #val_9, #val_10, #val_11, #val_12 {
   position: relative;
@@ -60,5 +74,22 @@ div#level_1_wrapper {
   left: 0px;
   width: 100%;
   height: 100%; }
+
+.draggable--over,
+.draggable-source--is-dragging {
+  background: none !important;
+  border: 3px dashed #999999;
+  color: #999999;
+  -webkit-box-shadow: 0px 0px 0px #fff;
+  -moz-box-shadow: 0px 0px 0px #fff;
+  box-shadow: 0px 0px 0px #fff; }
+
+.draggable-mirror {
+  opacity: 0.9;
+  -webkit-transform: scale(0.95) rotate(20deg);
+  -moz-transform: scale(0.95) rotate(20deg);
+  -ms-transform: scale(0.95) rotate(20deg);
+  -o-transform: scale(0.95) rotate(20deg);
+  transform: scale(0.95) rotate(20deg); }
 
 /*# sourceMappingURL=app.css.map */

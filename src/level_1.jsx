@@ -35,24 +35,11 @@ class Level_1 extends React.Component {
         return (
 
             <div id="level_one">
-                <h2>
-                    Level 1
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci blanditiis consequuntur cum
-                    cupiditate dignissimos earum et eum, in nulla odio odit ratione reprehenderit rerum sint sunt unde
-                    vel, veritatis.
-                </p>
-
 
                 <div id="level_1_wrapper">
-                    <div id="val_9" className="ui-state-disabled">.</div>
-                    <div id="val_1" className="block-drag">
-
-                    1
-
-                    </div>
-                    <div id="val_10" className="ui-state-disabled">.</div>
+                    <div id="val_9" className="ui-state-disabled"></div>
+                    <div id="val_1" className="block-drag">1</div>
+                    <div id="val_10" className="ui-state-disabled"></div>
 
                     <div id="val_2" className="block-drag">2 </div>
                     <div id="val_3" className="block-drag"> 3</div>
@@ -62,9 +49,9 @@ class Level_1 extends React.Component {
                     <div id="val_6" className="block-drag"> 6</div>
                     <div id="val_7" className="block-drag"> 7</div>
 
-                    <div id="val_11" className="ui-state-disabled">.</div>
+                    <div id="val_11" className="ui-state-disabled"></div>
                     <div id="val_8" className="block-drag"> 8</div>
-                    <div id="val_12" className="ui-state-disabled">.</div>
+                    <div id="val_12" className="ui-state-disabled"></div>
                 </div>
 
             </div>
