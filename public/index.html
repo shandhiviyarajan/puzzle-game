@@ -13,7 +13,7 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
-<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 
 <script type="text/javascript">
@@ -36,6 +36,35 @@
 <!--&lt;!&ndash; Plugins only &ndash;&gt;-->
 <!--<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/plugins.js"></script>-->
 
+
+
+<audio id="cube_up">
+    <source src="audio/cube-up.mp3"></source>
+</audio>
+
+<audio id="cube_down">
+    <source src="audio/cube-down.mp3"></source>
+</audio>
+<audio id="cube_drag">
+    <source src="audio/click.mp3"></source>
+</audio>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".block-drag").on('click',function(){
+            $("#cube_down")[0].play();
+        });
+
+
+        $(".block-drag").on('mouseenter',function(){
+
+            $("#cube_up")[0].play();
+        });
+
+
+    });
+</script>
 
 </body>
 </html>
