@@ -28,6 +28,10 @@ class Level_1 extends React.Component {
         swappable.on('swappable:swapped', function (e) {
             console.log(e);
         });
+
+        swappable.on('drag:stop',function(e){
+           console.log(e);
+        });
     }
 
     render() {

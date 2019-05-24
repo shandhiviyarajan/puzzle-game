@@ -38,30 +38,40 @@
 
 
 
-<audio id="cube_up">
-    <source src="audio/cube-up.mp3"></source>
+<audio id="m_drag" preload="auto" autoplay  >
+    <source src="audio/drag.wav" type="audio/mp3"></source>
+    <source src="audio/drag.ogg" type="audio/ogg"></source>
 </audio>
 
-<audio id="cube_down">
-    <source src="audio/cube-down.mp3"></source>
+<audio id="m_hover" preload="auto" autoplay  >
+    <source src="audio/hover.wav" type="audio/mp3"></source>
+    <source src="audio/hover.ogg" type="audio/ogg"></source>
 </audio>
-<audio id="cube_drag">
-    <source src="audio/click.mp3"></source>
+<audio id="m_drop" preload="auto" autoplay  >
+    <source src="audio/drop.wav" type="audio/mp3"></source>
+    <source src="audio/drop.ogg" type="audio/ogg"></source>
 </audio>
 
 <script type="text/javascript">
     $(document).ready(function(){
-
+        var m_drag = $("#m_drag")[0];
+        var m_hover = $("#m_hover")[0];
+        var m_drop = $("#m_drop")[0];
+        var a = new Audio();
+        a.src = '/audio/drag.wav';
         $(".block-drag").on('click',function(){
-            $("#cube_down")[0].play();
+
+
+            a.play().then(function(){
+
+
+            });
         });
 
 
         $(".block-drag").on('mouseenter',function(){
-
-            $("#cube_up")[0].play();
+          //  m_hover.play();
         });
-
 
     });
 </script>
